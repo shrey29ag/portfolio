@@ -14,7 +14,7 @@ export default function Home() {
       <Sidebar />
       
       {/* Main Content Area - Shifted right on desktop to accommodate sidebar */}
-      <main className="flex-1 md:ml-[300px] w-full flex flex-col relative z-0">
+      <main className="flex-1 lg:ml-[300px] w-full flex flex-col relative z-0">
         <Hero />
         <About />
         <Skills />

@@ -12,7 +12,7 @@ const Sidebar = () => {
 
   // Check for mobile screen size
   useEffect(() => {
-    const checkMobile = () => setIsMobile(window.innerWidth < 768);
+    const checkMobile = () => setIsMobile(window.innerWidth < 1024);
     checkMobile();
     window.addEventListener('resize', checkMobile);
     return () => window.removeEventListener('resize', checkMobile);
@@ -91,12 +91,22 @@ const Sidebar = () => {
 
   return (
     <>
-      {/* Mobile Header Bar */}
-      <div className="md:hidden fixed top-0 left-0 right-0 h-16 bg-white dark:bg-portfolio-dark z-50 flex items-center justify-between px-6 shadow-sm dark:shadow-gray-800 transition-colors duration-300">
-        <span className="font-black text-xl tracking-tighter text-portfolio-dark dark:text-portfolio-light">SA</span>
+      {/* Mobile/Tablet Header Bar */}
+      <div className="lg:hidden fixed top-0 left-0 right-0 h-16 bg-white dark:bg-portfolio-dark z-50 flex items-center justify-between px-6 shadow-sm dark:shadow-gray-800 transition-colors duration-300">
+        
+        {/* Profile Photo Trigger */}
+        <button 
+          onClick={() => setIsOpen(true)} 
+          className="flex items-center justify-center w-10 h-10 rounded-full bg-gray-200 dark:bg-gray-700 text-gray-400 dark:text-gray-500 overflow-hidden border-2 border-portfolio-gold cursor-pointer hover:scale-105 transition-transform"
+          aria-label="Open Menu"
+        >
+          <User size={24} />
+          {/* <img src="/path/to/image.jpg" className="w-full h-full object-cover" /> */}
+        </button>
+
         <div className="flex items-center gap-4">
-           {/* Visible on mobile header too for easy access */}
            <ThemeToggle />
+           {/* Burger Icon (Optional, keeping as secondary trigger) */}
            <button onClick={() => setIsOpen(true)} className="p-2 text-portfolio-dark dark:text-portfolio-light">
              <Menu size={28} />
            </button>
@@ -105,21 +115,21 @@ const Sidebar = () => {
 
       {/* Mobile Drawer */}
       <AnimatePresence>
-        {isOpen && isMobile && (
+        {isOpen && (
           <>
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               onClick={() => setIsOpen(false)}
-              className="fixed inset-0 bg-black/60 z-50 md:hidden backdrop-blur-sm"
+              className="fixed inset-0 bg-black/60 z-50 lg:hidden backdrop-blur-sm"
             />
             <motion.aside
               initial={{ x: '-100%' }}
               animate={{ x: 0 }}
               exit={{ x: '-100%' }}
               transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-              className="fixed inset-y-0 left-0 w-[280px] bg-portfolio-gold dark:bg-gray-900 z-50 md:hidden shadow-2xl"
+              className="fixed inset-y-0 left-0 w-[280px] bg-portfolio-gold dark:bg-gray-900 z-50 lg:hidden shadow-2xl"
             >
                <button 
                   onClick={() => setIsOpen(false)}
@@ -134,7 +144,7 @@ const Sidebar = () => {
       </AnimatePresence>
 
       {/* Desktop Sidebar (Static) */}
-      <aside className="hidden md:block fixed inset-y-0 left-0 w-[300px] bg-portfolio-gold dark:bg-gray-900 border-r border-portfolio-dark/5 dark:border-gray-800 overflow-y-auto transition-colors duration-300">
+      <aside className="hidden lg:block fixed inset-y-0 left-0 w-[300px] bg-portfolio-gold dark:bg-gray-900 border-r border-portfolio-dark/5 dark:border-gray-800 overflow-y-auto transition-colors duration-300">
         {sidebarContent}
       </aside>
     </>
