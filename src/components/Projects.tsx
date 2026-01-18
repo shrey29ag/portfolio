@@ -8,18 +8,18 @@ import SectionWrapper from './SectionWrapper';
 const Projects = () => {
   const projects = [
     {
-      title: "Video Conferencing Platform",
+      title: "Namo",
       description: "A real-time video communication application with screen sharing, chat, and secure room management capabilities.",
       tags: ["React", "WebRTC", "Socket.io", "Node.js"],
       image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=1000&auto=format&fit=crop",
-      links: { demo: "#", repo: "#" }
+      links: { demo: "https://namo.shreyagrawal.com", repo: "https://github.com/shrey29ag/namo" }
     },
     {
-      title: "Secure Trading Platform",
+      title: "GigFlow",
       description: "A comprehensive trading dashboard featuring real-time stock data visualization, secure user authentication, and transaction history.",
       tags: ["Next.js", "TypeScript", "Tailwind", "Firebase"],
       image: "https://images.unsplash.com/photo-1611974765270-ca12586343bb?q=80&w=1000&auto=format&fit=crop",
-      links: { demo: "#", repo: "#" }
+      links: { demo: "https://gigflow-rust.vercel.app/", repo: "https://github.com/shrey29ag/gigflow" }
     },
     {
       title: "Housing & Travel App",
@@ -87,4 +87,3 @@ const Projects = () => {
 };
 
 export default Projects;
-
