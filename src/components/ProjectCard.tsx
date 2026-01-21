@@ -27,11 +27,9 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
   // Check for touch device on mount
   useEffect(() => {
     const checkTouch = () => {
-      return (
-        'ontouchstart' in window ||
-        navigator.maxTouchPoints > 0 ||
-        window.matchMedia('(hover: none)').matches
-      );
+      // Only consider it a "touch device" for our purposes if it CANNOT hover.
+      // This allows laptops with touchscreens (which can still hover with a mouse) to work.
+      return window.matchMedia('(hover: none)').matches;
     };
     setIsTouchDevice(checkTouch());
   }, []);
