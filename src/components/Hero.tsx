@@ -100,7 +100,7 @@ const Hero = () => {
              <Link to="projects" smooth={true} offset={-50} className="px-6 md:px-8 py-3 md:py-4 bg-portfolio-gold text-portfolio-dark font-black tracking-wider rounded shadow-[4px_4px_0px_0px_rgba(33,33,33,1)] hover:shadow-[2px_2px_0px_0px_rgba(33,33,33,1)] dark:shadow-[4px_4px_0px_0px_rgba(255,255,255,0.5)] dark:hover:shadow-[2px_2px_0px_0px_rgba(255,255,255,0.5)] hover:translate-x-[2px] hover:translate-y-[2px] transition-all flex items-center gap-3 cursor-pointer text-sm md:text-base">
                 MY WORK <ArrowRight size={18} className="md:w-5 md:h-5" />
              </Link>
-             <a href="https://drive.google.com/file/d/1kgJ214w-5zsuUNTFspTmVkuQqDQLgWOG/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="px-6 md:px-8 py-3 md:py-4 border-2 border-portfolio-dark dark:border-portfolio-light text-portfolio-dark dark:text-portfolio-light font-bold tracking-wider rounded hover:bg-portfolio-dark hover:text-white dark:hover:bg-portfolio-light dark:hover:text-portfolio-dark transition-all flex items-center gap-3 text-sm md:text-base cursor-pointer">
+             <a href="https://drive.google.com/file/d/1YNfSmZ_Lcit_FuZEE1k7akA5BBC94oUp/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="px-6 md:px-8 py-3 md:py-4 border-2 border-portfolio-dark dark:border-portfolio-light text-portfolio-dark dark:text-portfolio-light font-bold tracking-wider rounded hover:bg-portfolio-dark hover:text-white dark:hover:bg-portfolio-light dark:hover:text-portfolio-dark transition-all flex items-center gap-3 text-sm md:text-base cursor-pointer">
                 RESUME <Download size={18} className="md:w-5 md:h-5" />
              </a>
           </div>
