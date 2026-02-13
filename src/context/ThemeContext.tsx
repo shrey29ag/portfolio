@@ -17,7 +17,7 @@ export const ThemeProvider = ({ children }: { children: ReactNode }) => {
 
   useEffect(() => {
     setMounted(true);
-    const savedTheme = localStorage.getItem('theme') as Theme;
+    const savedTheme = localStorage.getItem('portfolio_theme') as Theme;
     if (savedTheme) {
       setTheme(savedTheme);
     } else if (window.matchMedia('(prefers-color-scheme: light)').matches) {
@@ -30,7 +30,7 @@ export const ThemeProvider = ({ children }: { children: ReactNode }) => {
     const root = window.document.documentElement;
     root.classList.remove('light', 'dark');
     root.classList.add(theme);
-    localStorage.setItem('theme', theme);
+    localStorage.setItem('portfolio_theme', theme);
   }, [theme, mounted]);
 
   const toggleTheme = () => {
