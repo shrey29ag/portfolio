@@ -18,10 +18,18 @@ const Projects = () => {
     {
       title: "GigFlow",
       description: "A comprehensive trading dashboard featuring real-time stock data visualization, secure user authentication, and transaction history.",
-      tags: ["Next.js", "TypeScript", "Tailwind", "Firebase"],
+      tags: ["MERN Stack", "JavaScript", "Tailwind CSS", "MongoDB"],
       thumbnailUrl: "/gigflow_logo.svg",
       liveUrl: "https://gigflow-rust.vercel.app/",
       repoUrl: "https://github.com/shrey29ag/gigflow"
+    },
+    {
+      title: "Vantaya",
+      description: "A modern travel booking platform designed for seamless exploration and unique stay experiences.",
+      tags: ["MERN Stack", "Bootstrap", "Cloudinary", "Passport.js"],
+      thumbnailUrl: "/compass.svg",
+      liveUrl: "https://vantaya.shreyagrawal.com/",
+      repoUrl: "https://github.com/shrey29ag/vantaya"
     }
   ];
 
