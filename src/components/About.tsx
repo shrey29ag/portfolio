@@ -19,15 +19,15 @@ const About = () => {
       {(() => {
         const IntroText = () => (
             <p className="text-base lg:text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6 font-light">
-                I am a driven <span className="font-bold text-portfolio-dark dark:text-portfolio-light">Full Stack Web Developer</span> with a passion for building scalable and user-centric applications. 
-                My journey in tech is defined by a relentless curiosity and a commitment to solving complex problems through clean, efficient code.
+                I’m a passionate <span className="font-bold text-portfolio-dark dark:text-portfolio-light">Full Stack Web Developer</span> who enjoys building scalable and user-focused applications. 
+                Driven by curiosity and a problem-solving mindset, I love turning complex ideas into clean, efficient, and impactful digital solutions.
             </p>
         );
 
         const DetailText = () => (
              <p className="text-base lg:text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-8 font-light">
-                My goal is to leverage modern technologies to create impactful digital solutions. Whether it's architecting a robust backend or crafting an intuitive frontend, 
-                I strive for excellence in every line of code.
+                My goal is to use modern technologies to build impactful digital solutions. From developing robust backend systems to crafting intuitive frontend experiences, 
+                I aim to deliver quality and excellence in every project I work on.
             </p>
         );
 
@@ -45,7 +45,7 @@ const About = () => {
         const Quote = () => (
             <div className="p-6 bg-gray-50 dark:bg-gray-800 border-l-4 border-portfolio-gold rounded-r-lg transition-colors duration-300 text-left">
                 <p className="italic text-gray-600 dark:text-gray-400 text-sm lg:text-base">
-                    "Analytical thinking and problem-solving are not just skills; they are a way of life for me. I believe in continuous learning/improvement."
+                    "Analytical thinking and problem solving are more than just skills for me. They shape the way I approach challenges and opportunities. I strongly believe in continuous learning, constant improvement, and growing as a developer every day."
                 </p>
             </div>
         );

@@ -92,8 +92,8 @@ const Hero = () => {
           </div>
           
           <p className="text-gray-600 dark:text-gray-300 text-base md:text-lg max-w-lg leading-relaxed">
-            I build pixel-perfect, engaging, and accessible digital experiences. 
-            Passionate about modern web technologies and creating intuitive user interfaces.
+            I build pixel-perfect, engaging, and accessible digital experiences with a focus on clean design and seamless user experience. 
+            Passionate about modern web technologies and crafting intuitive, user-friendly interfaces.
           </p>
 
           <div className="flex flex-wrap justify-center lg:justify-start gap-4 pt-4">
